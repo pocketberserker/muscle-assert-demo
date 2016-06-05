@@ -1,0 +1,44 @@
+{
+  "name": "muscle-assert-demo",
+  "description": "muscle-assert demo repository",
+  "version": "1.0.0",
+  "author": {
+    "name": "pocketberserker",
+    "email": "pocketberserker@gmail.com",
+    "url": "https://github.com/pocketberserker"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-plugin-muscle-assert": "^1.0.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-register": "^6.9.0",
+    "eater": "^1.7.0",
+    "eater-b-reporter": "^0.2.0",
+    "muscle-assert": "^0.0.2",
+    "power-assert": "^1.4.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "files": [
+    "src/",
+    "lib/"
+  ],
+  "homepage": "https://github.com/pocketberserker/muscle-assert-demo",
+  "keywords": [
+    "babel",
+    "muscle-assert"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pocketberserker/muscle-assert-demo.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "prepublish": "npm run --if-present build",
+    "test": "eater --reporter eater-b-reporter --require ./script/enable-babel.js",
+    "watch": "babel src --out-dir lib --watch --source-maps"
+  }
+}

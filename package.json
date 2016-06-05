@@ -9,8 +9,13 @@
   },
   "devDependencies": {
     "babel-cli": "^6.9.0",
+    "babel-plugin-auto-import-assert": "^1.0.2",
+    "babel-plugin-jsdoc-to-assert": "^1.6.0",
     "babel-plugin-muscle-assert": "^1.0.0",
+    "babel-plugin-unassert": "^2.0.1",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-jsdoc-to-assert": "^2.0.1",
+    "babel-preset-power-assert": "^1.0.0",
     "babel-register": "^6.9.0",
     "eater": "^1.7.0",
     "eater-b-reporter": "^0.2.0",

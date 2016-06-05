@@ -1,4 +1,5 @@
-const assert = require("assert");
+const muscle = require("muscle-assert");
+const assert = require("power-assert");
 const test = require("eater/runner").test;
 import add from "../src/add";
 
@@ -25,6 +26,6 @@ test("deep strict equal example", (done) => {
   const actual = {
     name: "foo"
   };
-  assert.deepStrictEqual(actual, expected);
+  muscle.deepStrictEqual(actual, expected);
   done();
 });

@@ -4,8 +4,17 @@
   ],
   "env": {
     "development": {
+      "presets": [
+        "jsdoc-to-assert",
+        "power-assert"
+      ],
       "plugins": [
         "babel-plugin-muscle-assert"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "babel-plugin-unassert"
       ]
     }
   }
